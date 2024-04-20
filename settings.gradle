@@ -1,0 +1,3 @@
+rootProject.name = 'spring_security_in_action_gradle'
+include 'ch02-ex1'
+
