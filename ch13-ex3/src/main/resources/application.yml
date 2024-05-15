@@ -1,0 +1,22 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+spring:
+  application:
+    name: ch13-ex3
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          test-client:
+            registration:
+              client-id: "test-client"
+              client-secret: "{noop}test-secret"
+              client-authentication-methods:
+                - client_secret_basic
+              authorization-grant-types:
+                - client_credentials
+              scopes:
+                - info
+            require-authorization-consent: true
