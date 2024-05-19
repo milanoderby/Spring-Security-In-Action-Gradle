@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+jwt:
+  key: ymLTU8rq83j4fmJZj60wh4OrMNuntIj4fmJ
+
+spring:
+  application:
+    name: ch15-ex1-rs
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8082
+          jws-algorithms: HS-256
+
+server:
+  port: 8081

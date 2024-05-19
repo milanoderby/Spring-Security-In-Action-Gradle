@@ -1,0 +1,13 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+jwt:
+  key: ymLTU8rq83j4fmJZj60wh4OrMNuntIj4fmJ
+
+spring:
+  application:
+    name: ch15-ex1-as
+
+server:
+  port: 8082
