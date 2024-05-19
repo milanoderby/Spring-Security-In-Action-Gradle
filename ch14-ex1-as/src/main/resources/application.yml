@@ -1,0 +1,24 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+spring:
+  application:
+    name: ch14-ex1-as
+#  security:
+#    oauth2:
+#      authorizationserver:
+#        client:
+#          resource-server:
+#            registration:
+#              client-id: "resource-server"
+#              client-secret: "{noop}resource-server-secret"
+#              client-authentication-methods:
+#                - client_secret_basic
+#              authorization-grant-types:
+#                - client_credentials
+#              scopes:
+#                - info
+
+server:
+  port: 8082

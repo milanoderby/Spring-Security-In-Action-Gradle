@@ -1,0 +1,17 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+spring:
+  application:
+    name: ch14-ex1-rs
+  security:
+    oauth2:
+      resource-server:
+        opaquetoken:
+          introspection-uri: http://localhost:8082/oauth2/introspect
+          client-id: resource-server
+          client-secret: resource-server-secret
+
+server:
+  port: 8081
