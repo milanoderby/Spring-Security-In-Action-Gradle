@@ -1,0 +1,26 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+# application.yml 단에서 설정할 때, 사용
+spring:
+  application:
+    name: ch15-ex4-as
+  security:
+    oauth2:
+      authorizationserver:
+        client:
+          oidc-client:
+            registration:
+              client-id: "resource-server"
+              client-secret: "{noop}resource-server-secret"
+              client-authentication-methods:
+                - "client_secret_basic"
+              authorization-grant-types:
+                - "client_credentials"
+              scopes:
+                - "info"
+            require-authorization-consent: true
+
+server:
+  port: 8082
