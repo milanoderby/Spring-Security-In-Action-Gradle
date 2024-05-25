@@ -1,0 +1,19 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+jwt:
+  rsa-key:
+    public-key: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApDY1D8LmiNq8C92v7RXFZvhi4Is0A2P6JylSSjByvTEys5ARBD0FyVp5IsoPXMYwRqTaSdvCa2aZFgRd4W3SIasOZar87nHYUS3xZNYqDQQQlVrA4jEMHaa2TTReFsqiafaa6vsCJv1fK5NjwTULeA3+j4mUjdLPpEGeL3wmaWILeSP46daOK8wsIcVH2NGyd54CixHlVGSB7b1/tyrBYC7K4h1+qy36bjhZVOEu7FbBWdJCP+7rd55K1oRc3R5hAHQLIL8bvx6WzcxxQr8kPmVj1X6C+sGEW3q9GRjRlQDjiX3VlPU9iysIIR3MUQCMhuQfmxicNShd4peKaerifQIDAQAB
+
+spring:
+  application:
+    name: ch15-ex2-rs
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8082
+
+server:
+  port: 8081
