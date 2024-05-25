@@ -1,0 +1,18 @@
+logging:
+  level:
+    org.springframework.security: trace
+
+jwt:
+  rsa-key:
+    password: key-password
+    alias: madcoder-keypair
+    store:
+      path: keypair-store.jks
+      password: keystore-password
+
+spring:
+  application:
+    name: ch15-ex3-as
+
+server:
+  port: 8082
